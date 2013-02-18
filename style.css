@@ -1,0 +1,368 @@
+/*
+	@Theme Name: lovzzGrey
+	@Theme URI: http://www.hiimjin.com/
+	@Description: Simple is beautiful.Two columns,Grey,Simple.For my lovely baby ZZ.
+	@Version: 2.0
+	@Author: Liu Jin
+	@Author URI: http://www.hiimjin.com/
+	@Copyright: (c) 2011 HIIMJIN.COM
+	@License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
+*/
+/*--------------- reset ---------------*/
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ul{ list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight: bold }
+em { font-style: italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+
+/*--------------- body ---------------*/
+body {
+	font-family:"Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background:url("./images/bg.png");
+	overflow-x:hidden;
+}
+.clear{clear:both;}
+#R_loading{position:absolute;top:0;right:0px;background:#f60;color:white;padding:5px 10px;border-bottom-left-radius:10px;}
+/*-----------container---------------*/
+#container{
+	background:url("./images/bgSlide.png") no-repeat fixed 3px top;
+	height:auto!important;
+	min-height:800px;
+	height:800px;
+	width:100%;
+	position:absolute;
+	left:30px; 
+	overflow:hidden;
+}
+
+/*-----------header---------------*/
+#site-title {
+	background:url("./images/bgFade.png")  bottom;
+	height:200px;
+	width:224px;
+	position:fixed;
+	top:0px;
+	z-index:1000;
+}
+#site-title a {
+	display:block;
+	background:url("./images/logo.png") top left;
+	text-indent:-999px;
+	overflow:hidden;
+	width:183px;
+	height:98px;
+	position:absolute;
+	top:60px;
+	z-index:1000;
+}
+#site-title a:hover {background-position:bottom left;}
+
+#header{
+	width:200px;
+	height:inherit;
+	display:inline;
+	position:relative;
+	float:left;
+	margin:40px;
+}
+
+#mainmenu {margin-top:150px;}
+.sticky #mainmenu{width:180px;position:fixed;top:50px;left:100px;}
+.sticky #mainmenu ul{}
+.sticky #mainmenu ul li{margin-bottom:3px;border-bottom:1px dashed #dcdcdc;}
+.sticky #mainmenu ul li a {color:#f60;text-shadow:1px 1px 0 white;}
+.menu{
+	font-family:'Microsoft YaHei', Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	}
+
+.menu a,.menu a:link,.menu a:visited,.menu a:active{-moz-outline-style:none;outline:none;color:#999;text-decoration:none;}
+.menu a:hover{color:#333333;cursor:pointer}
+.menu li{margin-left:0;}
+
+.title a:link,.title a:visited,.title a:active{-moz-outline-style:none;outline:none;color:#333333;text-decoration:none;}
+.title a:hover{color:#666666;}
+
+a:link,a:visited,a:active{-moz-outline-style:none;outline:none;color:#ff6600;text-decoration:underline;}
+a:hover{color:#666666;}
+
+/*-----------------main--------------------*/
+#main {width:auto;position:relative;margin-left: 300px;padding-right: 120px;margin-top: 40px;}
+.post{margin-bottom:100px;}
+
+.content{margin-left:20px;}
+.content p{font-family:Verdana, Arial, Helvetica, sans-serif;font-size:14px;line-height:1.8em;text-shadow: 1px 1px 0px #ffffff;}
+.content blockquote{
+	background:#fff;
+	border:#FED411 1px dashed;
+	color:#999;
+	margin:10px 10px 10px 0;
+	padding:15px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+.content blockquote ol li{margin-left:20px;}
+
+.post_data{margin:20px 0 20px 0;border-bottom:1px dashed #333;border-top:1px dashed #333;}
+.post_data span {margin:5px 10px 0 0;color:#999;font-size:12px;}
+.post_data span a{text-decoration:none;color:#999;}
+h2.title{font-size:22px;text-shadow: 1px 1px 0px #ffffff;font-weight:bold;}
+
+/*---------------------- Sidebar -----------------------*/
+#sidebar{float:left;width:200px;margin-top:30px;}
+
+/*---------------------- 文章存档页面 -----------------------*/
+.wizard{margin-left:20px;font-size:16px;font-weight:bold;}
+.wizard span{color:#f60;text-shadow: 1px 1px 0px #ffffff;}
+
+/*---------------------- Copyright 单篇日志版权声明 -----------------------*/
+#copyright{
+background:#fff;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+margin-top:30px;
+padding:20px;
+border:2px solid #dcdcdc;
+}
+#copyright img{
+display:inline-block;
+border:2px solid #dcdcdc;
+}
+#copyright div{margin-left:70px;margin-top:-60px;}
+#copyright p,#copyright a {
+	font-size:12px;
+	font-family:arial,'Microsoft Yahei';}
+	
+/*-----------------widget ------------------*/
+.widget h2{font-size:18px;margin-bottom:5px;padding-top:5px;border-top:1px dashed #999;}
+.widget{font-size:12px;padding-top:30px;clear:both;color:#999;text-shadow: 1px 1px 0px #ffffff;}
+.widget a{text-decoration:none;}
+.widget ul li{margin-bottom:5px;border-bottom:1px solid #dcdcdc}
+
+/*------------------footer-------------------------*/
+#footer{
+	float:left;
+	margin-top:50px;
+	margin-left:305px;
+	margin-bottom:50px;
+	clear:both;
+}
+#footer p.copyright{
+	font-size:13px;
+	color:#767676;
+}
+#footer p a.copyright{color:#767676;text-decoration:underline;}
+#footer p a.pw{color:#b1b0b0;text-decoration:underline;}
+p.pw{
+	font-size:12px;
+	color:#b1b0b0;
+}
+.back_to_top{
+			text-decoration:none;
+			color:#eeeeee;
+			padding:1em;
+			background:#fff;
+			border:1px solid #d9d9d9;
+			float:right;
+			position:fixed;
+			bottom:20px;
+			right:20px;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius:5px;
+}
+
+/*-----------------comments 评论---------------------*/
+.commentnavi{margin:0 0 30px 25px;}
+
+#main #comments p {font-size:14px; line-height:1.7em;text-shadow:1px 1px 0 white;}
+#main #comments h2,span.floor{
+	font-size: 22px; color: #bdbdbd; text-transform: lowercase;
+	margin: 20px 0 10px 32px;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+#main #comments ol.commentlist {
+	margin: 0 0 20px 0; list-style: none; 
+}
+#main #comments ol.commentlist li {
+	margin: 0 0 20px 40px;
+}
+
+#main #comments ol.commentlist ul {
+	margin: 0; clear: both; list-style: none;
+}
+#main #comments ol.commentlist ul li {
+	padding:20px 20px 0 20px;
+	margin:20px 0 20px 20px;
+	background:#eeeeee;
+	-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+	border:#dddddd 1px solid;
+}
+#main #comments .comment {
+	overflow: hidden; 
+}
+#main #comments .comment .avatar {
+	float: left; margin-right:19px;
+	border: 1px solid #bdbdbd;
+}
+
+#main #comments .comment .commenttext {
+	width: 600px; float: left; 
+}
+#main #comments .comment p {
+	margin: 0 0 21px 0px;  
+} 
+#main #comments .comment cite {
+  font:  15px ;
+  margin : 0 0 9px 0; padding: 8px 0 0 0; display: block;
+}
+
+#main #comments .comment .comment-meta {
+	font-size:12px; margin: 0 0 5px 0;
+}
+#main #comments .comment .comment-meta a {
+	text-decoration:none;
+}
+#main #comments .comment .reply a {
+	display: block; float: right; width: 80px; margin: 0px 0 15px 0; 
+	background: #fed411; color: #333333;
+	font:  16px; text-align: center;
+	text-decoration:none;	
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+}
+#main #comments .comment .reply a:hover {
+	background: #333333;
+	color:#fed411;
+}
+.cancel-comment-reply {display:block;clear:both;}
+.cancel-comment-reply a {
+	float: left;  
+	background: #fed411; color: #333333; border: none;
+	padding: 5px;
+	font-size:14px; cursor: pointer;
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+	text-decoration:none;
+	text-align:center;
+	margin:0 0 20px 0;
+}
+#main #comments .comment .cancel a:hover {
+	background: #333333;
+}
+#main #comments #respond {
+	clear: both; overflow: hidden;margin-left:40px;
+}
+#main #comments #respond h2 {
+	font-size:26px; margin: 0 0 15px 0; color:#bdbdbd; text-transform: none;text-shadow:1px 1px 1px #ffffff;
+	top: 0;
+}
+
+#main #comments #respond div.fields {
+	width: 500px; float: left; margin: -7px 11px 0 0;
+}
+#main #comments #respond div.comment {float: left;}
+
+#main #comments #respond form label {
+	float: left; width: 80px; text-align: left; 
+	font-size:  18px;
+	color:#666666;text-shadow:1px 1px 1px #ffffff;
+	display:block;
+	clear:left;
+	line-height:50px;
+}
+#main #comments #respond form input {
+	float: left; width: 279px; height: 27px; margin: 0 0 10px -10px; padding: 10px; 
+	background: white; border: 1px solid #dddddd; font-size:18px; color: #666666;
+	font-family:inherit;
+}
+#main #comments #respond form textarea {
+	width:600px; float: left;  margin: 10px 0 25px 0; padding: 10px;
+	background: white; border: 1px solid #dddddd; font-size:17px; color: #666666;
+	font-family:inherit;
+}
+#loading,#error{float:left;clear:both;margin:0 0 10px 0;}
+
+#main #comments #respond form input.commentsubmit {
+	display: block; clear:both;
+	width: 200px; height:28px;
+	background: #fed411; color: #333333; border: none;
+	padding: 5px;
+	margin-left:0;
+	font-size:14px; cursor: pointer;
+	font-family:inherit;
+	-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;
+}
+#main #comments #respond form input:focus, #main #comments #respond form textarea:focus {
+	background: #dfdfdf;
+}	
+.mailtocommenter_button{float:right;right:10px;margin-top:-60px;}
+/********************ShortCode Style*********************/	
+.shortcodestyle {
+	margin: 20px 0px;
+	padding: 15px 15px 15px 70px;
+	font-size: 12px;
+	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+.buy {
+	background: url(images/shortcode/yes.png) no-repeat 20px 20px #EFF4D4;
+	border: 1px solid #AFC76C;
+	color: #779B39;
+}
+.task {
+	background: url(images/shortcode/checklist.png) no-repeat 20px 20px #EFEFEF;
+	border: 1px solid #DDD;
+	color: #787878;
+}
+.warning {
+	background: url(images/shortcode/warning.png) no-repeat 20px 20px #FFF0B5;
+	border: 1px solid #EAC946;
+	color: #B09E56;
+}
+.noway {
+	background: url(images/shortcode/noway.png) no-repeat 20px 20px #FADCD8;
+	border: 1px solid #EBA8A8;
+	color: #C66;
+}
+
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	border: 1px dashed #BFBFBF;
+	padding: 5px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	border-color: #f60;
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
